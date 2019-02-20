@@ -10,6 +10,7 @@ tags:
     - R
     - Data Visualization
     - Tableau
+---
 
 ## Abstract 
 Renewable energy and sustainable development are the controversial issue around the whole world. The study is trying to explore the association between electricity generation sources and greenhouse gas emission.
