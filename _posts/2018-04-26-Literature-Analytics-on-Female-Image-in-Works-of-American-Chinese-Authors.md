@@ -22,10 +22,10 @@ The majority of female come from different background and they are in lower soci
 
 Our original data contains 22 literature works of 12 Chinese American authors, which are from online open source and their formats are epub, mobi, and pdf. Raw data is transformed to text file. 
 
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/1.jpg)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/1.jpg)
 
 The reason why we choose these data is that all the main female characters in these literature works have something in common. They are all portrayed by Chinese American authors and live in the same age--20 century and same country--United States. 
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/2.jpg)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/2.jpg)
 
 ## System Design 
 ### Data Preprocessing
@@ -61,13 +61,13 @@ To complete this, we will choose proper concepts according to the frequency and 
 
 ## System Implementation
 ### Sentiment Analysis in Python
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/3.jpg)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/3.jpg)
 
 The line here in the chart represents the trend line of the sentiment score for each line of all 22 novels. The polynomial number is set as 3. From the trend of the line, we can see that the sentiment scores tend to be negative. That means the female image in the novel of American Chinese authors is technically negative. 
 
 ### Concepts Frequency and Classification and Clustering in SPSS
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/4.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/5.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/4.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/5.png)
 Based on what we get from SPSS, we can figure out why the descriptive part for female characters is negative. The concept bad appears 411 times in total. Taking a deeper look into the text, we can find that a lot of bad language are used, like shit and suck. Since these words present around the place where the main characters are in the context, we speculate that these characters tend to use bad language in their daily life and the social status is relatively low. Besides, words like made me sick, just a pain, painful, not the best quality and piece of crap, reflect the living situation and the things happen around the main characters are not satisfying. We assume that the authors focus on descripting the tough living condition and life of American Chinese female.
 
 ### Parameter Setting
@@ -85,16 +85,16 @@ Based on what we get from SPSS, we can figure out why the descriptive part for f
 ![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/11.png)
 ![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/master/Animal/12.png)
 Comparing the concepts of Amy Tan’s 6 novels and those of all novels, we find that the female image in Amy’s novel is in consist of what is analyzed previously. In the concept bad, the collected words have a large overlapped part. And further, we hope we can figure out the detailed reason why those bad concepts are used. So, we plan to do clustering analysis.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/13.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/14.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/13.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/14.png)
 We use auto cluster to let the machine choose the best model to do clustering analysis. We tried two suitable models to cluster the concepts. It is unsurprising that we get too many clusters (42 are our best results), which do not make sense or cannot be explained. But based on what we have learned, we do not have a more intelligent method to achieve our goal. 
 
 ## Use of Tools 
 We use Python to do POS-TAG for all 22 literature works, information extraction for 22 literature works, and sentiment analysis on only 6 literature works that written by Amy Tan. We do sentiment analysis on 6 literature works that written by Amy Tan because we want to do analysis on what is the female image under one of the Chinese American author; at the same time, Amy Tan has the most literature works in our datasets compared with other Chinese American authors.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/15.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/15.png)
 We use SPSS Modeler to do sentiment analysis on all 22 literature works and do cluster only on 6 literature works written by Amy Tan.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/16.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/17.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/16.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/17.png)
 
 ## Tableau Visualization for POS-TAG Results
 Compared with Figure 17, we can see the word type frequency of all 12 authors. From the bar chart, NN (Noun, singular or mass) is at the top of two lists and VBD (Verb, past tense), JJ (Adjective), PRP (Personal pronoun), and RP (Particle) belong to the most frequency word group. 
