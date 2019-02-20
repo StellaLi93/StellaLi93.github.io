@@ -25,7 +25,7 @@ Data of AP Poll ranking was transform in a comparable way.
 There were 4 steps of variables selection, from 56 to 8 for the ultimate model.
 
 ### Model Building
-4 models were built, XG-Boost, Logistic Regression, KNN, SVM.
+4 models were built, XG-Boost, Logistic Regression, KNN, SVM.
 
 ### Model Evaluation
 XG-Boost and Logistic Regression had the lowest log loss. Logistic regression model was chosen to be the final model due to the model stability while XG-Boost had a problem of overfitting.
