@@ -77,13 +77,13 @@ Based on what we get from SPSS, we can figure out why the descriptive part for f
 4. Select Check concepts based on highest frequency, and then beside Top number of concepts, enter 150.
 5. In the Copy Resource From section, click Load. Click the Opinion (English) template to select it.
 6. Click the Expert tab, select Accommodate spelling errors for a minimum root charter limit of, and then specify 4.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/6.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/7.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/8.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/9.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/10.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/11.png)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/12.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/6.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/7.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/8.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/9.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/10.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/blob/master/Literature/11.png)
+![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/master/Animal/12.png)
 Comparing the concepts of Amy Tan’s 6 novels and those of all novels, we find that the female image in Amy’s novel is in consist of what is analyzed previously. In the concept bad, the collected words have a large overlapped part. And further, we hope we can figure out the detailed reason why those bad concepts are used. So, we plan to do clustering analysis.
 ![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/13.png)
 ![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/14.png)
