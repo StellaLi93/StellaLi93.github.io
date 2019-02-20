@@ -1,15 +1,13 @@
 ---
 layout:     post
-title:      文件目录树状(tree)显示
-subtitle:   Mac终端显示输树状文件结构
-date:       2017-03-07
+title:      Deloitte March Data Crunch Madness
+date:       2018-04-06
 author:     BY
-header-img: img/post-bg-debug.png
+header-img: img/post-bg-march.png
 catalog: true
 tags:
-    - Mac
-    - 效率
-    - 开发技巧
+    - March Madness
+    - Data Analytics
 ---
 
 > 使用 **tree** 在终端显示树状文件结构
