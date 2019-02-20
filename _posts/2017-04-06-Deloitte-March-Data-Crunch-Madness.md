@@ -2,7 +2,7 @@
 layout:     post
 title:      Deloitte March Data Crunch Madness
 date:       2018-04-06
-author:     BY
+author:     Jianan Li
 header-img: img/post-bg-march.png
 catalog: true
 tags:
