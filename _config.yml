@@ -1,12 +1,11 @@
 # Site settings
-title: Jianan(Stella)Li
-SEOTitle: Stella | BY Blog
+title: Jianan Li
+SEOTitle: Stella
 header-img: img/post-bg-desk.jpg
 email: jianan_li@outlook.com
 description: "A recent graduate of MS. Business Analytics. Looking for new opportunity now."
 keyword: "Projects, Sharing, Portfolio"
 url: "https://stellali93.github.io/"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/StellaLi93/StellaLi93.github.io.git" # you code repository
 LinkedIn_repo: "https://www.linkedin.com/in/jianan-li-690274b6/"
 
