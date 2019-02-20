@@ -3,7 +3,7 @@ layout:     post
 title:      Literature Analytics on Female Image in Works of American Chinese Authors
 date:       2018-04-26
 author:     Jianan Li
-header-img: img/post-bg-literature.jpeg
+header-img: https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/post-bg-literature.jpeg
 catalog: true
 tags:
     - Text Analytics
