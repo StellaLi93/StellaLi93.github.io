@@ -8,6 +8,8 @@ catalog: true
 tags:
     - March Madness
     - Data Analytics
+    - Python
+    - SPSS
 ---
 
 ## Introduction
