@@ -7,6 +7,8 @@ header-img: img/post-bg-literature.jpg
 catalog: true
 tags:
     - Text Analytics
+    - SPSS
+    - Python
 ---
 
 ## Executive Summary
