@@ -40,25 +40,25 @@ Figure 3b
 
 #### Imputation
 After the variable transformation, we found 18 missing values in Age variable. It seems not to affect our result since we have a large dataset. However, we would still like to impute these data by MD imputation.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/5.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/5.png)
 Figure 4
 We combined the first 100 observations with all observations that have any missing value. The plot of proportions of missing variables shows the missing value is about 15% of the whole sample data.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/6.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/6.png)
 Figure 5
 We used mice function in R to impute 5 datasets. A linear model is fitted to the imputed dataset. R will estimate our regression model separately for each imputed dataset, 1 through 5. We then need to summarize or pool those estimates to get one overall set of parameter estimates. After comparing Adjusted R-squared and p-value among all the outcomes, we could say that imputation 5 performs better, which are what we will used to supplement the missing data. 
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/7.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/7.png)
 Figure 6
 Although the result is not good enough. But it wouldn’t affect our model building, since 18 variables is nothing when we have a dataset of 26,729 observations. The good thing is we filled up the missing values.
 
 ### Exploring Potential Correlations – Initial Plots
 It is inevitable that most of the predictors in the model would be categorical, and thus the pair scatter plots do not tell us much about the dataset.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/8.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/8.png)
 Figure 7
 It can be seen that the animal age is primarily distributed at a very low level (below one year old). It also seems that the animal type (cat/dog) may be correlated with the outcome, and also with whether the animal has a mixed color. However, the correlation between most other predictors tend to be rather random.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/9.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/9.png)
 Figure 8a
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/10.jpg)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/11.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/10.png)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/11.png)
 Figure 8b
 The first plot tells that the target variable is fairly balanced - positive results take up less than 60% of total number of observations. From the next plot we could tell that over 70% of the dogs in the sample have positive adoption results, whereas the number is only around 40% among cats. Maybe dogs are more popular than dogs under adoption condition. The last plot says that most dogs and cats are labeled 'unclear mix' for their breed, meaning the pet is only similar to, or is known as a child of, a known breed, but the parent status are basically unclear. 
 
@@ -74,34 +74,34 @@ The Logistic regression is designed to solve the binary-target prediction, which
 
 ### Feature Selection
 Predictors are selected through a forward stepwise subset regression. All of the 8 potential predictors are set as input.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/12.jpg)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/13.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/12.png)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/13.png)
 Figure 9
 The Bayesian Information Criterion (BIC) value is calculated for each step, and it is found that the 5th step has the lowest BIC, meaning that it is more reasonable to use the set of variables in the 5th step, which are:
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/14.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/14.png)
 
 ### Model Building & Result
 Two models of Logistic regression are built. One takes all independent variables as input, and the second model takes only the predictors kept after the previous feature selection.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/15.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/15.png)
 Figure 10a
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/16.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/16.png)
 Figure 10b
 Model 1 is built by all 9 variables, and there are 4 selected variables included in Model 2. Compared with these two regression models (as shown in Figure 10a and Figure 10b), we could see that for model 1 we could tell that most of the predictor coefficients are significant, while all the coefficients of predictors for model 2 are significant. 
 
 More importantly, the AIC value of model 2 is slightly less than that of Model 2. Meanwhile, we also use null deviance and residual deviance to test which model is better fitted. It proves that the p-value of Model 2 is smaller than Model 1, which further illustrates that Model 2 is better than Model 1. 
 
 An ANOVA Chi-squared test is also conducted to compare the results of the two models.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/17.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/17.png)
 Figure 11
 Comparing Model 1 and Model 2 by ANOVA test, the p-value of Model 2 is 0.1795. Meanwhile, although the values of residual degree of freedom and residual deviance have slight difference, the difference value of residual degree of freedom and residual deviance in model 2 is smaller than that in model 1, which proves that Model 2 has better performance than Model 1.
 
 ### Model Evaluation
 The model has an accuracy of 80.95% in the training dataset and has an accuracy of 81.37% in the testing set. It is proved that the model does not overfit.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/18.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/18.png)
 Figure 12
 Bootstrap cross validation is also conducted to evaluate the model. The process iterates 10 times - in each of iteration, the dataset is randomly partitioned into a training and a testing set, and a model is trained on the training set and the accuracy is checked on the testing set. 10 iterations give us 10 results of accuracies, of which the distribution is shown by Figure 9. The results are distributed around 81%, showing a robust prediction of the target variable.
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/19.jpg)
-![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/20.jpg)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/19.png)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Animal/20.png)
 Figure 13
 
 ## Conclusion
