@@ -11,12 +11,17 @@ tags:
 
 ## Executive Summary
 
-    Our project is to do literature analytics on female image in literature works of American Chinese authors. After a hundred years of development, American Chinese literature has made remarkable achievement, the female characters in those works have their own style and particular characteristics, and they also reflect the author’s consciousness. At the same time, identification consists of an individual’s sense of selfness and group awareness could reflect how one understands and responds to others. In our project we want to find out the specialty of female character in the literature works of American Chinese authors and we decide to explore one’s racial-ethnic identity can create a sense of understanding through conceptualizing past perceptions in to new and positive ideals of the selfness and group awareness.
+Our project is to do literature analytics on female image in literature works of American Chinese authors. After a hundred years of development, American Chinese literature has made remarkable achievement, the female characters in those works have their own style and particular characteristics, and they also reflect the author’s consciousness. At the same time, identification consists of an individual’s sense of selfness and group awareness could reflect how one understands and responds to others. In our project we want to find out the specialty of female character in the literature works of American Chinese authors and we decide to explore one’s racial-ethnic identity can create a sense of understanding through conceptualizing past perceptions in to new and positive ideals of the selfness and group awareness.
+
+We collect 22 literature works that contain female images from 12 American Chinese Authors. The data are online open sources with epub, mobi, and pdf format. We use Python to do information extraction, POS-TAG, and sentiment analysis. After that, we use SPSS modeler to do sentiment analysis on all 22 literature works and also on 6 literature works that written by Amy Tan.
+
+The majority of female come from different background and they are in lower social status facing with innumerable difficulties from society and culture. And the traditional female images are courageous, tough, taciturn, and thoughtfulness under the social background of the old time.
 
 
-## iOS 12 和 ARKit 2.0
+## Dataset Description
 
->关键词：官方防沉迷最为致命
+Our original data contains 22 literature works of 12 Chinese American authors, which are from online open source and their formats are epub, mobi, and pdf. Raw data is transformed to text file. 
+![](https://drive.google.com/open?id=1VmSHdQ99a1O1ziZCcXYC70-ZfZBVKPHF)
 
 ### iOS 12 
 
