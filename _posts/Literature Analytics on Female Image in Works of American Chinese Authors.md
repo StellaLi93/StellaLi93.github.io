@@ -21,6 +21,7 @@ The majority of female come from different background and they are in lower soci
 ## Dataset Description
 
 Our original data contains 22 literature works of 12 Chinese American authors, which are from online open source and their formats are epub, mobi, and pdf. Raw data is transformed to text file. 
+
 ![](https://drive.google.com/open?id=1VmSHdQ99a1O1ziZCcXYC70-ZfZBVKPHF)
 
 ### iOS 12 
@@ -29,7 +30,7 @@ iOS 12 相较于 iOS 11 并没有太多UI上的变动，刚更新完 bate 版本
 
 iOS 12 主要是对安全和性能的优化，iOS 12 在旧设备上的运行速度比 iOS 11更块，程序加载速度快了一倍。（PS：看来苹果并没有放弃旧设备）
 
-![](https://cdn.mos.cms.futurecdn.net/RdxhPVv8fAyM6oHsRgF6dH-650-80.png)
+![](https://drive.google.com/file/d/1VmSHdQ99a1O1ziZCcXYC70-ZfZBVKPHF/view)
 
 ### ARKit 2.0 
 
