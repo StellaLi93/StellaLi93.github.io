@@ -24,21 +24,54 @@ Our original data contains 22 literature works of 12 Chinese American authors, w
 
 ![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/1.jpg)
 
-### iOS 12 
+The reason why we choose these data is that all the main female characters in these literature works have something in common. They are all portrayed by Chinese American authors and live in the same age--20 century and same country--United States. 
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/2.jpg)
 
-iOS 12 相较于 iOS 11 并没有太多UI上的变动，刚更新完 bate 版本的 iOS 12，完全感觉不到这是个新系统。
+## System Design 
+### Data Preprocessing
+In this part we collect the fiction files from different sites including different types of files like txt, epub, etc. Here we transformed these text data into txt files and load it into the python for further use.
 
-iOS 12 主要是对安全和性能的优化，iOS 12 在旧设备上的运行速度比 iOS 11更块，程序加载速度快了一倍。（PS：看来苹果并没有放弃旧设备）
+The second step for this section was tokenize. Here we process the job in two parts. On the one hand we tokenize the text data into separate sentence and save them as a new txt file. This data set which consists of separated sentences is useful for our text analysis in the SPSS Modeler and the sentiment analysis in python.  On the other hand, we tokenize the same raw data in to words for pos-tagger analysis and frequency research. In both parts we perform standardization on the text data. For sentences, we transformed the text to lowercase and delete useless signals. For words, we transformed the words to lowercase and drop the stopwords and non-letter signals for better analysis. 
 
-![](https://drive.google.com/file/d/1VmSHdQ99a1O1ziZCcXYC70-ZfZBVKPHF/view)
+### Information Extracting
+Since our purpose is to analyze the characteristics of female figures in the works of Chinese American authors. So, in this step we will extract the text which describes the female figures from the whole text file. 
 
-### ARKit 2.0 
+In order to archive it, we first check several fictions manually about the descriptive words for female figures. One important conclusion is that continuous text describing a woman’s action and figure won’t exceed 5 complete sentences. (Here we define sentences by dots and other ending punctuation signals.) So, we will apply the approaches below to extract the needed text: Extract names from the fiction text.
+
+1. Extract names from the fiction text. (Here we only extract the names for main female characters in the fiction.)
+2. We search the sentences which contains the names extracted in the previous step and locate them.
+3. For each sentence located, we check the previous 5 sentences and the next 5 sentences and add all the sentences which describes the female figures in to the processing dataset. Here we judge whether a sentence is a description by check if there are certain keywords in this sentence. For third-person fictions, we will use “her”, “she”, and some words connecting with the woman figure like “woman”, “lady”, “ms”, etc. For first-person fictions, we will replace “her”, “she” with “I”, “me” and other similar terms.
+4. When we check all the sentences in a fiction, we will delete the repetitive sentences keep these sentences as the processing dataset. 
+
+### Concept Frequency and Classification
+In this step we will use SPSS modeler to load the processing data generated in the previous step and perform the concept term frequency and concept classification on the processing data. Here words, especially nouns, with high frequency indicates the frequent topic or events happened in the fiction. We can generate important concepts from the processing data and these concepts will help to deepen our understanding of the fiction. 
+
+Besides for the topic and events, the adjective and descriptive concepts with high frequency will indicates the potential feeling and attitude of authors upon the character. This will help to extract the writing characteristics from the text dataset.
+
+### Pos-Tagger
+In this step we will use python to identify the position information of all the words in the processing dataset. For example, whether the word is noun or verb, or comparative adjective or other kinds of words. After recognizing the word type, we will count the number of words with different word type. Since previous literature analysis research has shown the correlation between the frequency of different word pos-types and the quality of the works. So, the distribution for words of different pos-types will help us to evaluate the fictions and the patterns of these fictions in describing the female figures. Here we will use the pos_tag function in nltk package to perform this section. 
+
+### Sentiment Analysis
+In this step we will use python to perform a sentiment analysis on the processing text data.  In the fictions authors may indicates their attitudes and thoughts towards the characters by using words with sentiment. So, the sentiment analysis for the fiction text will reflect the authors’ opinions on the characteristics they constructed, which will help to deepen our sight into the fictions and our standing of the female figures in the fictions. Her we will use the sentiment intensity analyzer in the nltk package to perform this analysis and generate the positive and negative scores for all the sentences. Then we may check the sentiment for the whole text to understand it. 
+
+### Clustering
+In this step we will apply the machine learning methods upon the processing data to generate potential clusters for the sentences dataset. Through this process, we want to find similar sentences clusters which may describe the same part of female figures and check their sizes and contents.
+
+To complete this, we will choose proper concepts according to the frequency and content of them and transformed information of these concepts into a series of binary variables according to whether the words for a certain concept exist in the sentences. Then we may perform all kinds of clustering models using these binary variables. 
+
+## System Implementation
+### Sentiment Analysis in Python
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/3.jpg)
+
+The line here in the chart represents the trend line of the sentiment score for each line of all 22 novels. The polynomial number is set as 3. From the trend of the line, we can see that the sentiment scores tend to be negative. That means the female image in the novel of American Chinese authors is technically negative. 
+
+### Concepts Frequency and Classification and Clustering in SPSS
 
 Apple 与 皮克斯 合作开发了一种用于共享AR内容的新文件格式，新的 AR 格式名为 USDZ。
 
 作为一个含着金苹果出生的新生儿，USDZ 一开始就得到了 Adobe Creative Cloud （包括 Photoshop CC、InDesign CC、Illustrator CC、Dreamweaver CC、Premiere Pro CC）套件的支持。
 
-![](https://images.ifanr.cn/wp-content/uploads/2018/06/WWDC-10.jpg)
+
 
 同时，面向开发者的开发套件 ARKit 则升级到了二代，主要提升了面部跟踪、渲染能力、3D 探测和共享体验等能力。
 
