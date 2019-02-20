@@ -5,7 +5,8 @@ header-img: img/post-bg-desk.jpg
 email: jianan_li@outlook.com
 description: "A recent graduate of MS. Business Analytics. Looking for new opportunity now."
 keyword: "Projects, Sharing, Portfolio"
-url: "https://stellali93.github.io/"          # your host, for absolute URL
+url: "https://stellali93.github.io/"          # your host, for absolute
+baseurl: ""      
 github_repo: "https://github.com/StellaLi93/StellaLi93.github.io.git" # you code repository
 LinkedIn_repo: "https://www.linkedin.com/in/jianan-li-690274b6/"
 
