@@ -22,7 +22,7 @@ The majority of female come from different background and they are in lower soci
 
 Our original data contains 22 literature works of 12 Chinese American authors, which are from online open source and their formats are epub, mobi, and pdf. Raw data is transformed to text file. 
 
-![](https://drive.google.com/open?id=1VmSHdQ99a1O1ziZCcXYC70-ZfZBVKPHF)
+![](https://github.com/StellaLi93/MarkDown-Photos/blob/master/Literature/1.jpg)
 
 ### iOS 12 
 
