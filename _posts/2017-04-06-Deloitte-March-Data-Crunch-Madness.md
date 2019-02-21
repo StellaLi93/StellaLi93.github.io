@@ -10,6 +10,7 @@ tags:
     - Data Analytics
     - Python
     - SPSS
+    - Data Visualization
 ---
 
 ## Introduction
