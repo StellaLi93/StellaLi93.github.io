@@ -8,6 +8,7 @@ catalog: true
 tags:
     - R Studio
     - Data Analytics
+    - Data Visualization
 ---
 
 ## Introduction
