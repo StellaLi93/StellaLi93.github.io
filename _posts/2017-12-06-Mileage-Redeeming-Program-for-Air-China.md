@@ -30,6 +30,7 @@ Figure 3 is the scheme of database.
 
 ![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/master/AirChina/4.png)
 Figure 3
+
 CA_Table_One_way, CA_Table_Round, SA_Table_One_way, SA_Table_Round stands for one way gift ticket in CA, round trip in CA, one way ticket by Star Alliance (except CA) and round ticket by StarAlliance(except CA), separately. 
 New_User() is just a function that adds user to INFO database, use uuid5 as the identifier of a user. INS_Log() is a logger that record each transaction to log database. Change_INFO() is to update info database when transaction happened, and total mileage should not be influence when airlines gift user a ticket. User_buy_a_ticket() would add mileage and obviously Airline_gift_a_ticket() would substart mileage. Search_gift_Mileage() is to get how much mileage should cost when gift a ticket to user, data comes from these four variant: CA_Table_One_way, CA_Table_Round, SA_Table_One_way, SA_Table_Round. Output_All_data() is a function that print all data in database via pandas. User_Class_filter() is a filter that classify a user.
 Note: CA: Air China; SA: Star Alliance. 
