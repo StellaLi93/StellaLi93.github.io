@@ -92,7 +92,7 @@ From the input figures above, we can see that for the two-time clusters only pda
 ![](https://raw.githubusercontent.com/StellaLi93/MarkDown-Photos/master/Bank/19.png)
 For this two clustering model, the cluster quality both located in the range of good quality, which means we have a good cluster.
 
-From the proportion of the cluster results, we can see that cluster-5 contain the most proportion of our potential customers. So, we found a good cluster that contain more customers who would open a deposition in the bank. The bank can focus more on the customers in cluster 5 to improve the promotion effect.
+From the proportion of the cluster results, we can see that cluster-5 contain the most proportion of our potential customers. So, we found a good cluster that contain more customers who would open a deposit account in the bank. The bank can focus more on the customers in cluster 5 to improve the promotion effect.
 
 From the input figures above, we can see that people in cluster 5 have a more duration time (which is the most distinctive), more but not too much campaign is useful and most balance is good. This is reasonable, for example, people spend more time to know something about the bank indicates that they are more willing to open an account and this is what duration reflects.
 (cluster model 1)
