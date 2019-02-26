@@ -107,6 +107,6 @@ About 11% of the customers said “yes” from the original dataset, after the d
 ### Business aspect
 From the analysis, we have several business suggestions for our client:
 - Focus on the customers who have had business with the bank before, they are likely to stay with the bank.
-- Customers who attended the campaign for 2 to 3 times and spent more time on the phone during last campaign is very likely to open an deposit account. Take them as priori customers.
+- Customers who attended the campaign for 2 to 3 times and spent more time on the phone during last campaign is very likely to open a deposit account. Take them as priori customers.
 - Customers who have stable cash balance is more likely to deposit their money in the bank.
 - 3 to 5 days after the campaign is the best time to follow up the customers.
